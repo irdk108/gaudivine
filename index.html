@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="myPage">
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Gau Divine</title>
+  <meta charset="utf-8">
+  <meta name="description=" content="Gau Divine introduces a range of daily use products and medicines prepared from panchagavya (indigious cow milk,
+	  curd, ghee, go ark and gomaya). These products are free from aided chemical,
+	  insuring a healthy life.">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style>
+  body {
+      font: 400 18px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #00e600;
+      color: #fff;
+      padding: 70px 15px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #00e600;
+      font-size: 50px;
+  }
+  .logo {
+      color: #00e600;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #00e600;
+  }
+  .carousel-indicators li {
+      border-color: #00e600;
+  }
+  .carousel-indicators li.active {
+      background-color: #00e600;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #00e600; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #00e600;
+      background-color: #fff !important;
+      color: #00e600;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #00e600 !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #00e600;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #00e600;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #00e600 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #00e600;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+.w3-xlarge {
+    font-size: 24px!important
+}
+.w3-hover-text-indigo:hover {
+    color: #3f51b5!important
+}
+.w3-hover-text-purple:hover {
+    color: #9c27b0!important
+}
+.w3-hover-text-light-blue:hover {
+    color: #87CEEB!important
+}
+.w3-hover-text-red:hover {
+    color: #f44336!important
+}
+.w3-hover-text-blue:hover {
+    color: #2196F3!important
+}
+.carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }    
+  
+  
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="gd4.png" class="img-responsive" style="width:70%; align:left;" alt="Image"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+       <!-- <li><a href="#services">SERVICES</a></li> -->
+        <li><a href="#product">PRODUCTS</a></li>
+        <!--<li><a href="#pricing">PRICING</a></li> -->
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+<!--Slider
+  
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="sli1.jpg" alt="Image">
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="sli2.jpg" alt="Image">
+        <div class="carousel-caption">
+          
+        </div>      
+      </div>
+    </div>
+
+   
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>-->
+
+<div class="jumbotron text-center fixed-top">
+  <h1>Gau Divine</h1> 
+  <p>Make your Home Divine</p> 
+  </div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company</h2><br>
+      <h4>Gau Divine introduces a range of daily use products and medicines prepared from panchagavya (indigious cow milk,
+	  curd, ghee, go ark and gomaya) and others. These products are free from aided chemical,
+	  insuring a healthy life.</h4>
+	  <br>
+      <p> Products are prepared by vedic methodology as well as tested and proven scientifically.</p>
+      <br><!--<button class="btn btn-default btn-lg">Get in Touch</button>-->
+    </div>
+    
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Vision</h2><br>
+	  <p>Gau Divine is the practical implementaion of how can we utilize those cows who are slaughtered just because they are not cabable to give milk. We want to show to the world that how through waste products of cow i.e. cow dung and cow urine by using just these two assets of cow an unemployed youth can earn miminum 5000 to 8000 thousand rupee per month comformatably. So instead of slaughtering up of the cows which are not able to produce milk is wasting the most important jewel . 
+	  <br><br>
+	  Our company wants to make India a self-sufficient country, we are contributing towards making India a developed one, who can grow as well as can consume its own commodity itself.
+	  </p>
+      <!--<h4><strong>MISSION:</strong></h4><br>
+      <p><strong>VISION:</strong> </p>-->
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) 
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>POWER</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>LOVE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>JOB DONE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+</div> -->
+
+<!-- Container (Portfolio Section) -->
+<div id="product" class="container-fluid text-center">
+  <h2>Products</h2><br>
+  <h4>Which we offer</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <a href="beautycare.html" ><img src="beauty care.jpg" alt="Paris" width="400" height="300"></a>
+        <p><strong>Beauty Care</strong></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <a href="bodycare.html"><img src="body care.jpg" alt="New York" width="400" height="300"></a>
+        <p><strong>Body Care</strong></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <a href="homecare.html"><img src="home care.jpg" alt="San Francisco" width="400" height="300"></a>
+        <p><strong>Home Care</strong></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <a href="foodcare.html"><img src="food care.jpg" alt="Paris" width="400" height="300"></a>
+        <p><strong>Food Care</strong></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+       <a href="healthcare.html"> <img src="health care.jpg" alt="New York" width="400" height="300"></a>
+        <p><strong>Health Care</strong></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="others.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>Others</strong></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <br>
+  
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Good initiative from iskcon kanpur, buy gau divine organic panchagavya products and serve mother cow."<br><span>Shri Kaushal Raj Sharma, District Magistrate, Kanpur</span></h4>
+      </div>
+      <div class="item">
+        <h4>"We loved all the health care section products."<br><span>College students, Kanpur</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Now we can say our homes are divine"<br><span>Congregation devotees, iskcon kanpur</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p><b>Contact Us</b></p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>  Sri Sri Radha Madhava Mandir, Mainavati Marg, Bithoor Road, Kanpur, Uttar Pradesh-208002</p>
+      <p><span class="glyphicon glyphicon-phone"></span> 7376235062</p>
+	  <a href="https://www.facebook.com/gaudivine"><i class="fa fa-facebook w3-xlarge w3-hover-text-blue"></a></i>&nbsp;
+	  <i class="fa fa-youtube-play w3-xlarge w3-hover-text-red"></i>&nbsp;
+	  <i class="fa fa-google-plus w3-xlarge w3-hover-text-red"></i>&nbsp;
+	  <i class="fa fa-twitter w3-xlarge w3-hover-text-light-blue"></i>&nbsp;
+        <i class="fa fa-instagram w3-xlarge w3-hover-text-purple"></i> &nbsp;
+        <i class="fa fa-linkedin w3-xlarge w3-hover-text-blue"></i>&nbsp;
+        <i class="fa fa-pinterest-p w3-xlarge w3-hover-text-red"></i>&nbsp;
+		<i class="fa fa-vimeo w3-xlarge w3-hover-text-blue"></i>
+      <p><span class="glyphicon glyphicon-envelope"></span> gaudivine@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Google Maps -->
+<div id="googleMap" ></div>
+<iframe style="height:450px;width:100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3569.7881806364867!2d80.27569861476444!3d26.526936083295237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c39d8f22f66b3%3A0x9fd821e7fd74b3f5!2sISKCON+Temple!5e0!3m2!1sen!2sin!4v1487221452929"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>&copy;  2017 Gau Divine designed &amp; developed by - <a href="http://www.pooripadhai.com" title="Visit pooripadhai">www.pooripadhai.com</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
+
+
+
+<!--https://in.000webhost.com/members/learn/domains--
+https://gaudivine.000webhostapp.com/androidtest/restful.php
+
+-->
